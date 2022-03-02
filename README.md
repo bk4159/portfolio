@@ -1,2 +1,2 @@
 # portfolio
-Portfolio for Brian Kamau
+Portfolio website for Brian Kamau
