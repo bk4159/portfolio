@@ -40,9 +40,8 @@
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">Brian Kamau</h1>
-                        <h2 class="text-white mx-auto mt-2 mb-5">Hello, I'm a software developer looking to assist with new opportunities.</h2>
-                        <a class="btn btn-primary" href="#about">Learn More</a>
+                        <h1 class="mx-auto my-0 text-uppercase text-white">Brian Kamau</h1>
+                        <h2 class="text-white mx-auto mt-2 mb-5">Hey, it's nice to meet you.<br>I'm a Front-End Software Developer looking to help out in the world.</h2>
                     </div>
                 </div>
             </div>
@@ -54,12 +53,16 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
                         <h2 class="text-white mb-4">About Me</h2>
+                        <div class="round-container">
+                            <img src="assets/img/brian_kamau_image.jpg" alt="A picture of Brian Kamau">
+                        </div>
+                                                
                         <p class="text-white-50">
-                            I've always been a person who's there to help and I've been given many opportunities to do so in my career that is just starting out.
+                            I'm a passionate person looking to make substantial changes using software. I've always been a person who's there to assist and I'm planning to do exactly that in the opportunities I receive.
                             <br><br>
-                            While receiving my Software Engineering degree at the University of Ottawa I completed 5 CO-OP terms, getting real-world experience. This experience includes frontend development, backend development, test automation, and more. I also learned about a breadth of different areas in software engineering and completed many projects (as seen <a href="#projects">here</a>).
+                            While getting my Software Engineering degree at the University of Ottawa, I completed 5 CO-OP terms (which included frontend development, backend development, test automation, and more). I've also learned about a breadth of different areas in software engineering and I've worked on many projects (some are given <a href="#projects">here</a>).
                             <br><br>
-                            I have more areas of experience in and outside of software engineering. Feel free to get in contact with me <a href="#contact">here</a>.
+                            Some fun facts about myself: I love all kinds of music, basketball, and reading fantasy books. If you'd like to get in contact, feel free to say hello <a href="#contact">here</a>.
                         </p>
                     </div>
                 </div>
@@ -70,64 +73,249 @@
         <section class="projects-section bg-light" id="projects">
 
             <h2 class="text-center mb-4">Projects</h2>
-            <div class="container px-4 px-lg-5">
-                <!-- Featured Project Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/african_crafts_and_jewellery_screenshot.jpg" alt="African Crafts & Jewellery website image" /></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>African Crafts & Jewellery</h4>
-                            <p class="text-black-50 mb-0">
-                                African Crafts and Jewellery is a website for a local jewellery vendor and is made using Bootstrap. When live, the link will be added.
-                            </p>
+            <div class="container">
+                <div class="row">
+                    <!-- Featured Project -->
+                    <div class="col-md-6 col-lg-4 my-3">
+                        <button type="button" class="projectModalButton" data-bs-toggle="modal" data-bs-target="#africanCraftsModal">
+                            <img class="img-fluid" src="assets/img/african_crafts_and_jewellery_screenshot.jpg" alt="African Crafts & Jewellery website image" />
+                        </button>
+                        <div class="modal fade" id="africanCraftsModal" tabindex="-1" aria-labelledby="africanCraftsModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <button type="button" class="btn-close d-block ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>                                
+                                        <div id="africanCraftsCarouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#africanCraftsCarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#africanCraftsCarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            </div>
+                                            <div class="carousel-inner my-3">
+                                                <div class="carousel-item active">
+                                                    <img class="img-fluid" src="assets/img/african_crafts_and_jewellery_screenshot.jpg" alt="African Crafts & Jewellery website image" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid" src="assets/img/african_crafts_and_jewellery_screenshot_2.jpg" alt="African Crafts & Jewellery website image" />
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#africanCraftsCarouselIndicators" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#africanCraftsCarouselIndicators" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                        <h4 class="text-center">African Crafts & Jewellery</h4>
+                                        <p class="text-center text-black-50">
+                                            African Crafts and Jewellery is a website for a local jewellery vendor and is made using Bootstrap. This allows the jeweller to direct customers to their own website. I made the website prototype, including the Home page, the Products page (which gives images, names, and prices for products), and the Contact page. When live, the link will be added.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- Featured Project Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="featured-text text-center text-lg-left">
-                        <h4>Crowdlegal Dashboard</h4>
-                        <p class="text-black-50 mb-0">The Crowdlegal Dashboard is a web application made in a group capstone project for the organization CrowdLegal. The dashboard is able to visualize metrics and more.</p>
-                    </div>
-                </div>
-                <!-- Featured Project Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/nba_stat_grapher_screenshot.jpg" alt="NBA Stat Grapher website image" /></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>NBA Stat Grapher</h4>
-                            <p class="text-black-50 mb-0">NBA Stat Grapher is a React web application that takes the statistics of an NBA player and visualizes the stats on a graph. This allows one to visually see trends and to make predictions. This prototype was made in a group project.</p>
+                    <!-- Featured Project -->
+                    <div class="col-md-6 col-lg-4 my-3">
+                        <button type="button" class="projectModalButton textTitle" data-bs-toggle="modal" data-bs-target="#crowdlegalModal">
+                            <h4 class="my-3">Crowdlegal Dashboard</h4>
+                        </button>
+                        <div class="modal fade" id="crowdlegalModal" tabindex="-1" aria-labelledby="crowdlegalModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <button type="button" class="btn-close d-block ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <h4 class="text-center">Crowdlegal Dashboard</h4>
+                                        <p class="text-center text-black-50">
+                                            The Crowdlegal Dashboard is a web application made in a group capstone project for the organization CrowdLegal. The dashboard is able to visualize metrics and more for a CrowdLegal user. I helped with project management, the backend, and the frontend.<br><br>
+                                            I created the backend component to export data into CSV format and created some unit tests.<br><br>
+                                            In the frontend, I made the frontend and backend logic which shows the campaign name and allows users to navigate between their campaigns. I enhanced the responsiveness and cross-browser functionality of the entire web app. I created the frontend and backend logic for a form that gets user feedback on the dashboard. Finally, for the header, title, tabs, and more, I made aesthetic changes throughout the dashboard to have a better UI/UX.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- Featured Project Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="featured-text text-center text-lg-left">
-                        <h4>Rentals Database Interface</h4>
-                        <p class="text-black-50 mb-0">The Rentals Database Interface is a Command Line Interface for the database of a vacation rental application. The interface allows for a user to interact with an PostgreSQL database. The capabilities of the user for the database depends on the user type (Admin, Host, etc.). This prototype was made in a group project.</p>
-                    </div>
-                </div>
-                <!-- Featured Project Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/patient_management_system_screenshot.png" alt="Patients Management Subsystem website image" /></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Patients Management Subsystem</h4>
-                            <p class="text-black-50 mb-0">Patients Management Subsystem is a web application for a hospital management system. Among other features, one can add, remove, and update patient or staff profiles. This prototype was made in a group project where I mainly worked in the frontend using React.</p>
+                    <!-- Featured Project -->
+                    <div class="col-md-6 col-lg-4 my-3">
+                        <button type="button" class="projectModalButton" data-bs-toggle="modal" data-bs-target="#patientsManagementModal">
+                            <img class="img-fluid" src="assets/img/patient_management_system_screenshot.png" alt="Patients Management Subsystem website image" />
+                        </button>
+                        <div class="modal fade" id="patientsManagementModal" tabindex="-1" aria-labelledby="patientsManagementModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <button type="button" class="btn-close d-block ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <div id="patientsManagemenCarouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#patientsManagemenCarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#patientsManagemenCarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#patientsManagemenCarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button type="button" data-bs-target="#patientsManagemenCarouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                <button type="button" data-bs-target="#patientsManagemenCarouselIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                                <button type="button" data-bs-target="#patientsManagemenCarouselIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                            </div>
+                                            <div class="carousel-inner my-3">
+                                                <div class="carousel-item active">
+                                                    <img class="img-fluid" src="assets/img/patient_management_system_screenshot.png" alt="Patients Management Subsystem website image" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid" src="assets/img/patient_management_system_screenshot_2.jpg" alt="Patients Management Subsystem website image" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid" src="assets/img/patient_management_system_screenshot_3.jpg" alt="Patients Management Subsystem website image" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid" src="assets/img/patient_management_system_screenshot_4.jpg" alt="Patients Management Subsystem website image" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid" src="assets/img/patient_management_system_screenshot_5.jpg" alt="Patients Management Subsystem website image" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid" src="assets/img/patient_management_system_screenshot_6.jpg" alt="Patients Management Subsystem website image" />
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#patientsManagemenCarouselIndicators" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#patientsManagemenCarouselIndicators" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                        <h4 class="text-center">Patients Management Subsystem</h4>
+                                        <p class="text-center text-black-50">
+                                            Patients Management Subsystem is a web application for a hospital management system. Among other features, one can add, remove, and update patient or staff profiles.<br><br>
+                                            This prototype was made in a group project where I mainly worked on the frontend using React. I made the frontend and backend logic for the Consult Patient File and the Visualize Division pages. The Consult Patient File refers to the database and shows patient information for the searched Patient ID, including the date of birth, phone numbers, addresses, and more. The Visualize Division page refers to the database and gives information on a given division. The Visualize Division has the functionality to discharge patients in the Admissions column and to admit patients in the Admission Requests column.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <!-- Featured Project -->
+                    <div class="col-md-6 col-lg-4 my-3">
+                        <button type="button" class="projectModalButton textTitle" data-bs-toggle="modal" data-bs-target="#rentalDatabaseModal">
+                            <h4 class="my-3">Rentals Database Interface</h4>
+                        </button>
+                        <div class="modal fade" id="rentalDatabaseModal" tabindex="-1" aria-labelledby="rentalDatabaseModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <button type="button" class="btn-close d-block ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <h4 class="text-center">Rentals Database Interface</h4>
+                                        <p class="text-center text-black-50">
+                                            The Rentals Database Interface is a CLI for the database of a vacation rental application. The interface allows for a user to interact with a PostgreSQL database. The user's capabilities on the database depends on the user type (Admin, Host, Guest, etc.). For example, hosts can see and create listings whereas guests can only view the listings.<br><br>
+                                            This prototype was made in a group project. I created the backend Java program that interacted with the database. The program welcomes the users, allows them to log into their accounts, and interact with the database depending on their user type.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <!-- Featured Project -->
+                    <div class="col-md-6 col-lg-4 my-3">
+                        <button type="button" class="projectModalButton" data-bs-toggle="modal" data-bs-target="#statGrapherModal">
+                            <img class="img-fluid" src="assets/img/nba_stat_grapher_screenshot.jpg" alt="NBA Stat Grapher website image" />
+                        </button>
+                        <div class="modal fade" id="statGrapherModal" tabindex="-1" aria-labelledby="statGrapherModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <button type="button" class="btn-close d-block ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>                                
+                                        <div id="statGrapherCarouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#statGrapherCarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#statGrapherCarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#statGrapherCarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            </div>
+                                            <div class="carousel-inner my-3">
+                                                <div class="carousel-item active">
+                                                    <img class="img-fluid" src="assets/img/nba_stat_grapher_screenshot_2.jpg" alt="NBA Stat Grapher website image" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid" src="assets/img/nba_stat_grapher_screenshot.jpg" alt="NBA Stat Grapher website image" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid" src="assets/img/nba_stat_grapher_screenshot_3.jpg" alt="NBA Stat Grapher website image" />
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#statGrapherCarouselIndicators" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#statGrapherCarouselIndicators" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                        <h4 class="text-center">NBA Stat Grapher</h4>
+                                        <p class="text-center text-black-50">
+                                            NBA Stat Grapher is a React web application that takes the statistics of an NBA player and visualizes the stats on a graph (which allows someone to see trends and make predictions).<br><br>
+                                            This prototype was made in a group project. I made the Welcome page, the tooltips, and I also worked to make the Graphing page look and feel better.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- Featured Project Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/SEGEats_web_application_screenshot.png" alt="SEGEats website image" /></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>SEGEats</h4>
-                            <p class="text-black-50 mb-0">SEGEats is a web application (made using Bootstrap and JavaScript) that allows food ordering and checkout from restaurants. This prototype was made in a group project.</p>
+                    <!-- Featured Project -->
+                    <div class="col-md-6 col-lg-4 my-3">
+                        <button type="button" class="projectModalButton" data-bs-toggle="modal" data-bs-target="#SEGEatsModal">
+                            <img class="img-fluid" src="assets/img/SEGEats_web_application_screenshot.jpg" alt="SEGEats website image" />
+                        </button>
+                        <div class="modal fade" id="SEGEatsModal" tabindex="-1" aria-labelledby="SEGEatsModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <button type="button" class="btn-close d-block ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>                                
+                                        <div id="SEGEatsCarouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#SEGEatsCarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#SEGEatsCarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#SEGEatsCarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button type="button" data-bs-target="#SEGEatsCarouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                <button type="button" data-bs-target="#SEGEatsCarouselIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                            </div>
+                                            <div class="carousel-inner my-3">
+                                                <div class="carousel-item active">
+                                                    <img class="img-fluid" src="assets/img/SEGEats_web_application_screenshot.jpg" alt="SEGEats website image" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid" src="assets/img/SEGEats_web_application_screenshot_2.jpg" alt="SEGEats website image" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid" src="assets/img/SEGEats_web_application_screenshot_3.jpg" alt="SEGEats website image" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid" src="assets/img/SEGEats_web_application_screenshot_4.jpg" alt="SEGEats website image" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid" src="assets/img/SEGEats_web_application_screenshot_5.jpg" alt="SEGEats website image" />
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#SEGEatsCarouselIndicators" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#SEGEatsCarouselIndicators" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                        <h4 class="text-center">SEGEats</h4>
+                                        <p class="text-center text-black-50">
+                                            SEGEats is a web application (made using Bootstrap and JavaScript) that allows food ordering and checkout from restaurants.<br><br>
+                                            This prototype was made in a group project. I created the Welcome, List of Restaurants, and Menu pages in the website. I added functionality to add/remove menu items and to checkout your order.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
+                </div>                
             </div>
         </section>
 
@@ -135,43 +323,25 @@
         <section class="contact-section" id="contact">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                    <div class="mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-4">Contact Me</h2>
+                        <h2 class="text-white mb-4">Say Hello!</h2>
 
-                        <form action="https://getform.io/f/e5b2d08e-ece4-47a0-a8ae-5addeae9d6e1" method="POST">
-                            <fieldset>
-                                <!-- Name input-->
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." maxlength="255" required/>
-                                    <label for="name">*Full name</label>
+                        <div class="container">
+                            <div class="card py-4 mx-auto my-4">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-envelope text-primary mb-2"></i>
+                                    <h4 class="text-uppercase m-0">Email</h4>
+                                    <hr class="my-4 mx-auto" />
+                                    <div class="text-black-50"><a href="mailto:brianmkamau22@gmail.com">brianmkamau22@gmail.com</a></div>
                                 </div>
-                                <!-- Email address input-->
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" maxlength="255" required/>
-                                    <label for="email">*Email address</label>
-                                </div>
-                                <!-- Phone number input-->
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" maxlength="255"/>
-                                    <label for="phone">Phone number</label>
-                                </div>
-                                <!-- Message input-->
-                                <div class="form-floating mb-3">
-                                    <textarea class="form-control" id="message" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
-                                    <label for="message">*Message</label>
-                                </div>
-                            </fieldset>
-                                                        
-                            <p class="text-white">Symbol * indicates a required field</p>
-                            <button class="btn btn-primary" type="submit">Send</button>
-                        </form>
-
-                        <div class="social d-flex justify-content-center">
-                            <a class="mx-2" href="https://www.linkedin.com/in/brianmkamau/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="mx-2" href="https://github.com/bk4159" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-
+                            </div>
+                            
+                            <div class="social d-flex justify-content-center my-4">
+                                <a class="mx-2" href="https://www.linkedin.com/in/brianmkamau/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="mx-2" href="https://github.com/bk4159" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>                            
+                        </div>                        
                     </div>
                 </div>
             </div>
