@@ -7,25 +7,6 @@
 // Scripts
 // 
 
-const clearContactForm = () => {
-    const contactFormInputs = [
-        document.getElementById("name"),
-        document.getElementById("email"),
-        document.getElementById("phone"),
-        document.getElementById("message")
-    ];
-    
-    //clear all inputs in the contact form
-    for (let i = 0; i < contactFormInputs.length; i++) {
-        if (contactFormInputs[i]) {
-            contactFormInputs[i].value = "";
-        }
-    }
-}
-//clear the contact form when the page is loaded
-window.onload = clearContactForm;
-
-
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function (ie: make the navbar shrinked/modified)
